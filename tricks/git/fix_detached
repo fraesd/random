@@ -1,0 +1,15 @@
+# Create temporary branch for your detached head
+git branch tmp
+
+# go to master
+git checkout master
+
+# merge in commits from previously detached head
+git merge tmp
+
+# delete temporary branch
+git branch -d tmp
+
+# shorthand for above:
+# git checkout master
+# git merge HEAD@{1}
