@@ -1,21 +1,19 @@
+set hlsearch
 " set clear and nice vim colorscheme "
-colorscheme slate
-
-" sets smartindentation "
-set si
-
-" sets vim autoindentation "
-set ai
-
-"sets vim folding, based on expression, comment folding enabled "
-set fdm=expr foldexpr=getline(v:lnum)=~'^\s*'.&commentstring[0] 
+syntax on
+colorscheme desert256
+set t_Co=256
 
 " sets tabstop "
-set tabstop=3
+set tabstop=2
 
 " sets tabwidth "
-set shiftwidth=3
+set shiftwidth=2
 
 " sets autocommenting of following lines "
 set formatoptions=rco
 
+set nu
+
+"mkdir -p ~/.vim/colors"
+"curl -o ~/.vim/colors/desert256.vim https://raw.githubusercontent.com/vim-scripts/desert256.vim/master/colors/desert256.vim"
